@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Review | CS 499 ePortfolio</title>
+  <meta name="description" content="Code Review - CS 499 Computer Science Capstone ePortfolio">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo"><i class="fas fa-laptop-code"></i> CS 499 ePortfolio</a>
+      <button class="menu-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="code-review.html" class="active">Code Review</a></li>
+          <li><a href="software-engineering.html">Software Design</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="databases.html">Databases</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="enhancement-hero">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Code Review
+    </div>
+    <h1><i class="fas fa-search-plus"></i> Code Review</h1>
+    <p>A comprehensive walkthrough of the original artifact, identifying areas for improvement and outlining planned enhancements.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Code Review Video</h2>
+        <p>Watch the full code review walkthrough of the iOS Inventory Management Application.</p>
+      </div>
+      <!-- ============================================ -->
+      <!-- PLACEHOLDER: CODE REVIEW VIDEO -->
+      <!-- Replace the placeholder below with your YouTube video embed. -->
+      <!-- <div class="video-container"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Code Review Video" allowfullscreen></iframe></div> -->
+      <!-- ============================================ -->
+      <div class="video-container placeholder-box">
+        <p><strong>PLACEHOLDER:</strong> Add your YouTube video embed here</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Replace this entire div with:</p>
+        <code style="background: #fff; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-top: 0.5rem; font-size: 0.85rem;">
+          &lt;div class="video-container"&gt;&lt;iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Code Review Video" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+        </code>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Code Review Summary</h2>
+        <p>Key areas covered during the code review process.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h3>Existing Functionality</h3>
+          <p>A detailed walkthrough of the original application's features, including user authentication, inventory tracking, and the overall code structure built in CS 360.</p>
+          <ul class="feature-list mt-2">
+            <li><i class="fas fa-check-circle"></i> Application architecture overview</li>
+            <li><i class="fas fa-check-circle"></i> User interface walkthrough</li>
+            <li><i class="fas fa-check-circle"></i> Data model and storage review</li>
+            <li><i class="fas fa-check-circle"></i> Authentication flow analysis</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+          <h3>Code Analysis</h3>
+          <p>In-depth analysis of the existing codebase, identifying areas where design patterns, algorithms, and data management could be improved.</p>
+          <ul class="feature-list mt-2">
+            <li><i class="fas fa-exclamation-triangle" style="color: #e53e3e;"></i> Monolithic architecture concerns</li>
+            <li><i class="fas fa-exclamation-triangle" style="color: #e53e3e;"></i> Limited search and sorting capabilities</li>
+            <li><i class="fas fa-exclamation-triangle" style="color: #e53e3e;"></i> Basic data persistence approach</li>
+            <li><i class="fas fa-exclamation-triangle" style="color: #e53e3e;"></i> Missing error handling patterns</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Planned Enhancements</h3>
+          <p>Overview of the three planned enhancements targeting software design, algorithms, and database management to demonstrate CS program competencies.</p>
+          <ul class="feature-list mt-2">
+            <li><i class="fas fa-arrow-right" style="color: var(--primary-light);"></i> MVVM architecture refactor</li>
+            <li><i class="fas fa-arrow-right" style="color: var(--primary-light);"></i> Advanced search &amp; sorting algorithms</li>
+            <li><i class="fas fa-arrow-right" style="color: var(--primary-light);"></i> Comprehensive SwiftData schema</li>
+            <li><i class="fas fa-arrow-right" style="color: var(--primary-light);"></i> Security &amp; audit improvements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="card" style="max-width: 800px; margin: 0 auto;">
+        <h3><i class="fas fa-tasks" style="color: var(--accent); margin-right: 0.5rem;"></i> Code Review Checklist</h3>
+        <p class="text-muted">The following areas were evaluated during the code review:</p>
+        <ul class="feature-list mt-2">
+          <li><i class="fas fa-check-circle"></i> <strong>Structure:</strong> Code organization, file structure, and naming conventions</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Documentation:</strong> Inline comments, function headers, and README quality</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Variables:</strong> Meaningful naming, proper scoping, and type safety</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Arithmetic:</strong> Calculations for inventory quantities, pricing, and reporting</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Loops &amp; Logic:</strong> Iteration patterns, conditional logic, and control flow</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Error Handling:</strong> Input validation, error states, and recovery mechanisms</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Security:</strong> Authentication, data encryption, and access control</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Testing:</strong> Test coverage, edge cases, and quality assurance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3><i class="fas fa-laptop-code"></i> CS 499 ePortfolio</h3>
+        <p>Computer Science Capstone<br>Southern New Hampshire University</p>
+      </div>
+      <div class="footer-links">
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="code-review.html">Code Review</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Enhancements</h4>
+        <ul>
+          <li><a href="software-engineering.html">Software Design</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="databases.html">Databases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CS 499 Capstone ePortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
