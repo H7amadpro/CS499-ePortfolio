@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databases | CS 499 ePortfolio</title>
+  <meta name="description" content="Enhancement Three: Databases - CS 499 Capstone ePortfolio">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo"><i class="fas fa-laptop-code"></i> CS 499 ePortfolio</a>
+      <button class="menu-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="code-review.html">Code Review</a></li>
+          <li><a href="software-engineering.html">Software Design</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="databases.html" class="active">Databases</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="enhancement-hero">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Enhancement Three
+    </div>
+    <h1><i class="fas fa-database"></i> Databases</h1>
+    <p>Enhancement Three: Comprehensive SwiftData schema design, entity relationships, CRUD operations, audit logging, and backup/restore functionality.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Enhancement Narrative</h2>
+        <p>A detailed reflection on the database enhancement process.</p>
+      </div>
+      <!-- PLACEHOLDER: NARRATIVE CONTENT -->
+      <div class="placeholder-box">
+        <p><strong>PLACEHOLDER:</strong> Paste your Enhancement Three Narrative here</p>
+        <p>Your narrative should address:</p>
+        <ul>
+          <li>What is the artifact? When was it created?</li>
+          <li>Why did you select this artifact for your ePortfolio?</li>
+          <li>What specific components showcase your skills in database design?</li>
+          <li>How was the artifact improved? What was the enhancement process like?</li>
+          <li>What challenges did you face? What did you learn?</li>
+          <li>Which course outcomes were met through this enhancement?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Artifact Comparison</h2>
+        <p>A side-by-side look at the original and enhanced database implementations.</p>
+      </div>
+      <div class="artifact-comparison">
+        <div class="artifact-card original">
+          <span class="artifact-label"><i class="fas fa-clock-rotate-left"></i> Original Artifact</span>
+          <h3>CS 360 Version</h3>
+          <p>The original application with basic data storage and minimal database design.</p>
+          <!-- PLACEHOLDER: ORIGINAL ARTIFACT LINK/DESCRIPTION -->
+          <div class="placeholder-box" style="text-align: left; padding: 1rem;">
+            <p><strong>PLACEHOLDER:</strong> Add link to original artifact or describe it here</p>
+          </div>
+          <h4 class="mt-2">Original Database</h4>
+          <ul class="feature-list">
+            <li><i class="fas fa-minus-circle" style="color: var(--text-muted);"></i> Simple data storage</li>
+            <li><i class="fas fa-minus-circle" style="color: var(--text-muted);"></i> No entity relationships</li>
+            <li><i class="fas fa-minus-circle" style="color: var(--text-muted);"></i> Basic CRUD only</li>
+            <li><i class="fas fa-minus-circle" style="color: var(--text-muted);"></i> No audit trail</li>
+          </ul>
+        </div>
+        <div class="artifact-card enhanced">
+          <span class="artifact-label"><i class="fas fa-sparkles"></i> Enhanced Artifact</span>
+          <h3>CS 499 Enhanced Version</h3>
+          <p>The enhanced application with comprehensive database architecture and advanced data management.</p>
+          <!-- PLACEHOLDER: ENHANCED ARTIFACT LINK/DESCRIPTION -->
+          <div class="placeholder-box" style="text-align: left; padding: 1rem;">
+            <p><strong>PLACEHOLDER:</strong> Add link to enhanced artifact or describe it here</p>
+          </div>
+          <h4 class="mt-2">Enhanced Database</h4>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> SwiftData persistence framework</li>
+            <li><i class="fas fa-check-circle"></i> 8 entity schema with relationships</li>
+            <li><i class="fas fa-check-circle"></i> Full CRUD with referential integrity</li>
+            <li><i class="fas fa-check-circle"></i> Comprehensive audit logging</li>
+            <li><i class="fas fa-check-circle"></i> Backup &amp; restore functionality</li>
+            <li><i class="fas fa-check-circle"></i> Multi-location inventory</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Database Schema</h2>
+        <p>The enhanced application uses a comprehensive schema with 8 interconnected entities.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h4><i class="fas fa-box" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Items</h4>
+          <p class="text-muted">Core inventory items with name, description, quantity, price, SKU, barcode, and category/supplier relationships.</p>
+        </div>
+        <div class="card">
+          <h4><i class="fas fa-tags" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Categories</h4>
+          <p class="text-muted">Organizational categories with custom icons and hierarchical grouping for inventory items.</p>
+        </div>
+        <div class="card">
+          <h4><i class="fas fa-users" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Users</h4>
+          <p class="text-muted">User accounts with hashed passwords, role-based access control, and biometric authentication settings.</p>
+        </div>
+        <div class="card">
+          <h4><i class="fas fa-building" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Branches</h4>
+          <p class="text-muted">Multiple business locations with address information and branch-specific inventory tracking.</p>
+        </div>
+        <div class="card">
+          <h4><i class="fas fa-truck" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Suppliers</h4>
+          <p class="text-muted">Supplier management with contact details, associated items, and supply chain tracking.</p>
+        </div>
+        <div class="card">
+          <h4><i class="fas fa-exchange-alt" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Stock Transfers</h4>
+          <p class="text-muted">Inter-branch stock transfer records with source/destination tracking and transfer history.</p>
+        </div>
+        <div class="card">
+          <h4><i class="fas fa-history" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Audit Logs</h4>
+          <p class="text-muted">Comprehensive logging of all data changes including who, what, when, and before/after values.</p>
+        </div>
+        <div class="card">
+          <h4><i class="fas fa-cloud-arrow-up" style="color: var(--primary-light); margin-right: 0.5rem;"></i> Backups</h4>
+          <p class="text-muted">Data backup metadata with timestamps, file references, and restore capability tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Skills Demonstrated</h2>
+        <p>Key database design and management competencies showcased through this enhancement.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-database"></i></div>
+          <h3>SwiftData Persistence</h3>
+          <p>Leveraged Apple's modern SwiftData framework for type-safe, efficient data persistence with automatic schema migration support.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-diagram-project"></i></div>
+          <h3>Entity Relationships</h3>
+          <p>Designed complex relationships between Items, Categories, Users, Branches, and Suppliers with referential integrity constraints.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-pen-to-square"></i></div>
+          <h3>CRUD Operations</h3>
+          <p>Implemented complete Create, Read, Update, and Delete operations with proper validation, error handling, and data consistency checks.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-file-shield"></i></div>
+          <h3>Audit Logging</h3>
+          <p>Built a comprehensive audit trail system that records all data modifications with user attribution, timestamps, and change details.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-rotate"></i></div>
+          <h3>Backup &amp; Restore</h3>
+          <p>Developed data backup and restore functionality enabling complete data recovery and protection against data loss.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-map-location-dot"></i></div>
+          <h3>Multi-Location Management</h3>
+          <p>Implemented multi-branch inventory tracking with stock transfer capabilities and location-specific reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Course Outcomes Addressed</h2>
+        <p>This enhancement specifically addresses the following CS 499 course outcomes.</p>
+      </div>
+      <ul class="outcome-list" style="max-width: 800px; margin: 0 auto;">
+        <li class="outcome-item">
+          <span class="outcome-number">1</span>
+          <div>
+            <strong>Collaborative Environments</strong>
+            <p>The multi-user database design with role-based access control supports organizational decision making by enabling different stakeholders to access relevant inventory data.</p>
+          </div>
+        </li>
+        <li class="outcome-item">
+          <span class="outcome-number">4</span>
+          <div>
+            <strong>Innovative Techniques</strong>
+            <p>Utilized Apple's modern SwiftData framework with advanced features like entity relationships, cascading deletes, and automatic schema migrations.</p>
+          </div>
+        </li>
+        <li class="outcome-item">
+          <span class="outcome-number">5</span>
+          <div>
+            <strong>Security Mindset</strong>
+            <p>Implemented comprehensive audit logging, encrypted data storage, backup/restore for data integrity, and role-based access controls to protect sensitive inventory data.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3><i class="fas fa-laptop-code"></i> CS 499 ePortfolio</h3>
+        <p>Computer Science Capstone<br>Southern New Hampshire University</p>
+      </div>
+      <div class="footer-links">
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="code-review.html">Code Review</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Enhancements</h4>
+        <ul>
+          <li><a href="software-engineering.html">Software Design</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="databases.html">Databases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CS 499 Capstone ePortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
